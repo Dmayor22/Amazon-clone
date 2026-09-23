@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header > #logo {
+  width: 100px;
+}
+
+header .delivery {
+  display: flex;
+  align-items: center;  
+  gap: 5px;
+}
+
+header .delivery > img {
+  width: 20px;
+}
+
+header .delivery > p {
+  color: #fff;
+}
+
+header .delivery p > #uk {
+  font-weight: 700;
+}
