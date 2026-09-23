@@ -2,10 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #dadada;
+}
+
+a {
+  text-decoration: none;
+  
 }
 
 header {
-  background-color: #000;
+  background-color: #131921;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -41,7 +51,7 @@ header .delivery > p {
 
 header .delivery p > #uk {
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .search {
@@ -49,26 +59,25 @@ header .delivery p > #uk {
   align-items: center;
   background-color: #fff;
   width: 55%;
+  border: 4px;
 }
 
-.search > select {
-  background-color: gray;
-  width: 10%;
-  padding: 10px;
-  outline: 0;
-  text-align: center;
-  border: 0;
-  font-weight: 600;
-  appearance: none;
-  background-image: url(../images/dropdown_icon.png);
-  background-repeat: no-repeat;
-  background-size: 10px;
-  background-position-y: 12px;
-  background-position-x: calc(100% - 14px);
+.search .search_product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background-color: #e5e5e5;
+  padding: 10px 20px;
+  border-radius: 4px 0 0 4px;
+}
+
+.search_product > img {
+  width: 13px;
 }
 
 .search > input {
-  width: 86%;
+  width: 100%;
   padding: 9px 20px;
   border: 0;
   outline: 0;
@@ -78,16 +87,11 @@ header .delivery p > #uk {
   font-size: 13px;
 }
 
-.search_image {
-  background-color: orange;
-  padding: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search_image > img {
-  width: 20px;
+.search > img {
+  width: 41px;
+  background: #ffd64f;
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
 }
 
 .other_cta {
@@ -152,7 +156,13 @@ header .delivery p > #uk {
   font-weight: 700;
 }
 
-.cart > img {
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart img {
   width: 30px;
 }
 
