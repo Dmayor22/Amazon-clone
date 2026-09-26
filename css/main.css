@@ -221,21 +221,18 @@ header .delivery p > #uk {
 
 .hero_slider div img {
   width: 100%;
-}
-
-#prev_btn img,
-#next_btn img {
-  width: 30px;
-
+  mask-image: linear-gradient(to bottom, #000 50%, transparent 100%);
 }
 
 #prev_btn,
 #next_btn {
+  width: 50px;
+  z-index: 1;
   position: absolute;
   top: 20%;
-  background: #fff;
-  padding: 40px 10px
-
+  background: #ffffff4f;
+  padding: 40px 10px;
+  cursor: pointer;
 }
 
 #next_btn {
