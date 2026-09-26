@@ -209,3 +209,35 @@ header .delivery p > #uk {
 .trade ul li a {
   color: #fff;
 }
+
+.hero_slider {
+  position: relative;
+}
+
+.hero_slider div {
+  display: flex;
+  overflow-y: hidden;
+}
+
+.hero_slider div img {
+  width: 100%;
+}
+
+#prev_btn img,
+#next_btn img {
+  width: 30px;
+
+}
+
+#prev_btn,
+#next_btn {
+  position: absolute;
+  top: 20%;
+  background: #fff;
+  padding: 40px 10px
+
+}
+
+#next_btn {
+  right: 0;
+}
