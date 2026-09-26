@@ -14,14 +14,18 @@ changeSlider();
 
 prevBtn.addEventListener("click", () => {
   currentImage =
-    currentImage === 0 ? sliderImages.length - 1 : currentImage - 1;
+    currentImage === 0
+      ? sliderImages.length - 1
+      : currentImage - 1;
 
   changeSlider();
 });
 
 nextBtn.addEventListener("click", () => {
   currentImage =
-    currentImage === sliderImages.length - 1 ? 0 : currentImage + 1;
+    currentImage === sliderImages.length - 1
+      ? 0
+      : currentImage + 1;
 
   changeSlider();
 });
