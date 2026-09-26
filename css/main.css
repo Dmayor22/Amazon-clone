@@ -11,7 +11,6 @@ body {
 
 a {
   text-decoration: none;
-  
 }
 
 header {
@@ -169,4 +168,44 @@ header .delivery p > #uk {
 .cart span {
   color: #fff;
   font-weight: 700;
+}
+
+/* menu */
+.trade {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  background: darkcyan;
+}
+
+.trade .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.trade .menu a {
+  color: #fff;
+}
+
+.trade .menu > img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.trade ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.trade ul li {
+  list-style: none;
+}
+
+.trade ul li a {
+  color: #fff;
 }
