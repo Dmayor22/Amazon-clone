@@ -262,7 +262,7 @@ header .delivery p > #uk {
 
 .invenoty_details a {
   text-decoration: none;
-  color: green;
+  color: #009999;
 }
 
 /* best sellers  --- products iamges*/
@@ -276,11 +276,15 @@ header .delivery p > #uk {
 }
 .best_sellers > div {
   display: flex;
-  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.best_sellers > div::-webkit-scrollbar {
+  display: none;
 }
 
 .best_sellers div > img {
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
   margin-top: 10px;
 }
