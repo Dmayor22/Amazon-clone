@@ -210,8 +210,10 @@ header .delivery p > #uk {
   color: #fff;
 }
 
+/* image slider */
 .hero_slider {
   position: relative;
+  z-index: -1;
 }
 
 .hero_slider div {
@@ -237,4 +239,28 @@ header .delivery p > #uk {
 
 #next_btn {
   right: 0;
+}
+
+/* inventory  */
+.inventory {
+  margin-top: -250px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 10px 20px;
+}
+
+.inventory .invenoty_details {
+  background: #fff;
+  padding: 20px;
+}
+
+.invenoty_details > img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.invenoty_details a {
+  text-decoration: none;
+  color: green;
 }

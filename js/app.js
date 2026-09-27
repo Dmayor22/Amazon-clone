@@ -6,26 +6,34 @@ let currentImage = 0;
 
 const changeSlider = () => {
   sliderImages.forEach((image, index) => {
-    image.style.display = index === currentImage ? "block" : "none";
+    if (currentImage === index) {
+      image.style.display = "block";
+    } else {
+      image.style.display = "none";
+    }
   });
 };
 
 changeSlider();
 
-prevBtn.addEventListener("click", () => {
-  currentImage =
-    currentImage === 0
-      ? sliderImages.length - 1
-      : currentImage - 1;
+nextBtn.addEventListener("click", () => {
+  if (currentImage === sliderImages.length - 1) {
+    currentImage = 0;
+  } else {
+    currentImage = currentImage + 1;
+  }
 
   changeSlider();
 });
 
-nextBtn.addEventListener("click", () => {
-  currentImage =
-    currentImage === sliderImages.length - 1
-      ? 0
-      : currentImage + 1;
+prevBtn.addEventListener("click", () => {
+  if (currentImage === 0) {
+    currentImage = sliderImages.length - 1;
+  } else {
+    currentImage = currentImage - 1;
+  }
+
+  console.log(currentImage);
 
   changeSlider();
 });
