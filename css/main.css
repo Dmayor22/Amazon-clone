@@ -264,3 +264,23 @@ header .delivery p > #uk {
   text-decoration: none;
   color: green;
 }
+
+/* best sellers  --- products iamges*/
+.product_best_sellers {
+  padding: 10px 20px;
+}
+
+.best_sellers {
+  background: #fff;
+  padding: 20px 15px;
+}
+.best_sellers > div {
+  display: flex;
+  overflow-y: hidden;
+}
+
+.best_sellers div > img {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+}
