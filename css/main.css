@@ -114,12 +114,6 @@ header .delivery p > #uk {
   border: 0;
   outline: 0;
   font-weight: 600;
-  /* appearance: none;
-  background-image: url(../images/dropdown_icon.png);
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position-y: 14px;
-  background-position-x: calc(100% - 14px); */
 }
 
 .other_cta .account a {
@@ -211,11 +205,6 @@ header .delivery p > #uk {
 }
 
 /* image slider */
-.hero_slider {
-  position: relative;
-  z-index: -1;
-}
-
 .hero_slider div {
   display: flex;
   overflow-y: hidden;
@@ -243,16 +232,20 @@ header .delivery p > #uk {
 
 /* inventory  */
 .inventory {
-  margin-top: -250px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   padding: 10px 20px;
 }
 
+.inventory_box {
+  margin-top: -20vw;
+}
+
 .inventory .invenoty_details {
   background: #fff;
   padding: 20px;
+  z-index: 1;
 }
 
 .invenoty_details > img {
@@ -287,4 +280,72 @@ header .delivery p > #uk {
   max-width: 200px;
   max-height: 200px;
   margin-top: 10px;
+}
+
+/* second inventory */
+.inventory_two {
+  margin-top: 0;
+}
+
+/* discount sales */
+.product_best_sellers_two {
+  padding: 10px 20px;
+}
+
+.best_sellers_two {
+  background: #fff;
+  padding: 20px 15px;
+}
+.best_sellers_two > div {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.best_sellers_two > div::-webkit-scrollbar {
+  display: none;
+}
+
+.discount_deals {
+  background: #dadada;
+  margin-top: 10px;
+  cursor: pointer;
+  padding-right: 6px;
+  max-width: 5000px;
+}
+
+.discount_deals > img {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+#off {
+  background: red;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.discount_deals #deal {
+  color: red;
+  margin: 5px 0 10px 0;
+  font-size: 13px;
+}
+
+.discount_deals #price {
+  color: gray;
+  font-size: 13px;
+}
+
+.discount_deals #price_value {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.discount_deals #product_remark {
+  color: gray;
+  font-weight: 600;
 }
