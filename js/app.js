@@ -39,9 +39,9 @@ prevBtn.addEventListener("click", () => {
   changeSlider();
 });
 
-for (const item of scrollContainer) {
+scrollContainer.forEach((item) => {
   item.addEventListener("wheel", (e) => {
     e.preventDefault();
     item.scrollLeft += e.deltaY;
   });
-}
+});
