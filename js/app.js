@@ -2,6 +2,9 @@ const prevBtn = document.querySelector("#prev_btn");
 const nextBtn = document.querySelector("#next_btn");
 const sliderImages = document.querySelectorAll(".hero_slider div img");
 const scrollContainer = document.querySelectorAll(".best_sellers div img");
+const discountScrollContainer = document.querySelectorAll(
+  ".best_sellers_two div img",
+);
 
 let currentImage = 0;
 
@@ -40,6 +43,13 @@ prevBtn.addEventListener("click", () => {
 });
 
 scrollContainer.forEach((item) => {
+  item.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    item.scrollLeft += e.deltaY;
+  });
+});
+
+discountScrollContainer.forEach((item) => {
   item.addEventListener("wheel", (e) => {
     e.preventDefault();
     item.scrollLeft += e.deltaY;

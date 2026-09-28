@@ -307,22 +307,24 @@ header .delivery p > #uk {
 }
 
 .discount_deals {
-  background: #dadada;
+  background: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   margin-top: 10px;
   cursor: pointer;
-  padding-right: 6px;
-  max-width: 5000px;
+  min-width: 210px;
 }
 
-.discount_deals > img {
-  max-width: 150px;
-  max-height: 150px;
+.discount_deals .discount_details_image > img {
+  max-width: 110px;
+  max-height: 110px;
   margin: 0 auto;
   display: block;
 }
 
 #off {
-  background: red;
+  background: #be0b3b;
   color: #fff;
   padding: 4px 6px;
   border-radius: 4px;
@@ -330,7 +332,7 @@ header .delivery p > #uk {
 }
 
 .discount_deals #deal {
-  color: red;
+  color: #be0b3b;
   margin: 5px 0 10px 0;
   font-size: 13px;
 }
@@ -346,6 +348,7 @@ header .delivery p > #uk {
 }
 
 .discount_deals #product_remark {
-  color: gray;
+  color: #525252;
   font-weight: 600;
+  font-size: 14px;
 }
