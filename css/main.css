@@ -276,7 +276,7 @@ header .delivery p > #uk {
   display: none;
 }
 
-.best_sellers div > img {
+.best_sellers div a > img {
   max-width: 200px;
   max-height: 200px;
   margin-top: 10px;
