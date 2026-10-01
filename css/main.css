@@ -29,7 +29,7 @@ header .banner {
   gap: 20px;
 }
 
-header #logo {
+header .logo {
   width: 100px;
 }
 
@@ -351,4 +351,18 @@ header .delivery p > #uk {
   color: #525252;
   font-weight: 600;
   font-size: 14px;
+}
+
+
+/* footer */
+footer {
+  background: #131921;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+footer .logo {
+  width: 100px;
 }
