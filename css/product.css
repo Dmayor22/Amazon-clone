@@ -89,7 +89,67 @@ main {
 }
 
 hr {
-    margin-top: 10px;
+  margin-top: 10px;
+}
+
+.product_details_two {
+  margin-top: 10px;
+}
+
+.product_details_two #price_reduction {
+  font-size: 1.6rem;
+  color: #be0b3b;
+  margin-right: 4px;
+}
+
+.product_details_two #product_new_price {
+  font-size: 1.6rem;
+}
+
+.product_details_two > #product_new_currency {
+  font-size: 14px;
+}
+
+.product_details_two #list_price {
+  color: gray;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+#list_price > span {
+  text-decoration: line-through;
+}
+
+.product_details_two #fast {
+  font-weight: 600;
+}
+
+#get > a {
+  color: #009999;
+}
+
+#get {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.product_details_two > a {
+  display: block;
+  margin: 6px 0;
+  font-size: 14px;
+  color: #009999;
+}
+
+#available > a {
+  color: #009999;
+}
+
+#color {
+  margin-top: 15px;
+}
+
+#color > span {
+  font-weight: 600;
 }
 
 .full_product_display .product_order_details {
