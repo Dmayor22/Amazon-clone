@@ -25,7 +25,7 @@ main {
 
 .product_image .crop_images > img {
   width: 60px;
-  border: 2px solid gray;
+  border: 1px solid gray;
   margin-bottom: 10px;
   display: block;
   border-radius: 10px;
@@ -152,8 +152,26 @@ hr {
   font-weight: 600;
 }
 
+.product_color {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product_color .image_color {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid gray;
+  padding: 10px 15px;
+}
+
+.image_color > img {
+  width: 30px;
+}
+
 .full_product_display .product_order_details {
-  border: 2px solid red;
+  border: 1px solid red;
   height: 100vh;
   flex-basis: 20%;
 }
