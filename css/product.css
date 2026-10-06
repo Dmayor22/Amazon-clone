@@ -156,6 +156,7 @@ hr {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 10px;
 }
 
 .product_color .image_color {
@@ -163,11 +164,35 @@ hr {
   align-items: center;
   gap: 7px;
   border: 1px solid gray;
-  padding: 10px 15px;
+  padding: 7px 12px;
+  cursor: pointer;
 }
 
 .image_color > img {
   width: 30px;
+}
+
+.brand_details {
+  width: 300px;
+  margin-top: 15px;
+}
+
+.brand_details .brand_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand_details .brand_title > span {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.brand_title span:first-child {
+  font-weight: 600;
+}
+
+.brand_title > .brand_title_value {
+  width: 80px;
 }
 
 .full_product_display .product_order_details {
