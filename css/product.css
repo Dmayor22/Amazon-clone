@@ -187,7 +187,7 @@ hr {
   margin-bottom: 2px;
 }
 
-.brand_title span:first-of-type {
+.brand_details .brand_title span:first-of-type {
   font-weight: 600;
 }
 
@@ -300,4 +300,22 @@ hr {
 
 .cart_shipper_details {
   color: gray;
+  font-size: 13px;
+}
+
+.cart_shipper_details p {
+  margin-bottom: 8px;
+}
+
+.cart_shipper_details .brand_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart_shipper_details .brand_title > span {
+  margin-bottom: 6px;
+}
+
+.cart_shipper_details .brand_title > .brand_title_value {
+  width: 160px;
 }
