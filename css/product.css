@@ -226,6 +226,7 @@ hr {
 
 .cart_details {
   margin-top: 15px;
+  font-size: 16px;
 }
 
 .cart_details > a {
@@ -235,4 +236,30 @@ hr {
 
 .cart_details #get {
   margin-bottom: 0;
+  margin-top: 13px;
+}
+
+.delivery_details {
+  margin-top: 13px;
+  font-size: 16px;
+  line-height: 1.3rem;
+}
+
+.delivery_details p > a,
+.delivery_details p > #time {
+  color: #009999;
+}
+
+.delivery_location {
+  margin-top: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.delivery_location > img {
+  width: 20px;
+}
+.delivery_location > span{
+  color: #009999;
 }
