@@ -199,7 +199,7 @@ hr {
   border: 1px solid gray;
   flex-basis: 18%;
   padding: 20px 15px;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .buy_new {
@@ -318,4 +318,20 @@ hr {
 
 .cart_shipper_details .brand_title > .brand_title_value {
   width: 160px;
+}
+
+.about_item h3 {
+  margin: 13px 0;
+}
+
+.about_item ul li {
+  margin-bottom: 10px;
+}
+
+.about_item ul li > span {
+  margin: 0 10px;
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+  padding: 0 4px;
+  border-top-left-radius: 10px;
 }
