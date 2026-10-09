@@ -1,5 +1,6 @@
 main {
   background-color: #fff;
+  padding-bottom: 100px;
 }
 
 .quick_link {
@@ -329,7 +330,7 @@ hr {
 }
 
 .about_item ul li > span {
-  margin: 0 10px;
+  margin: 0 3px 0 10px;
   border-left: 3px solid #000;
   border-right: 3px solid #000;
   padding: 0 4px;
@@ -337,4 +338,18 @@ hr {
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+#add_to_list {
+  width: 100%;
+  margin-top: 20px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  outline: 0;
+  border: 2px solid gray;
+}
+
+
+#add_to_list::placeholder {
+  color: #000;
 }
