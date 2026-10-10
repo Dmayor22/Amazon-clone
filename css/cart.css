@@ -1,0 +1,43 @@
+.shpping_cart {
+  padding: 10px 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.left_side_details {
+  flex-basis: 75%;
+  background: #fff;
+  padding: 30px 20px;
+}
+
+.left_side_details > h3 {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.cart_details {
+  display: flex;
+  gap: 10px;
+}
+
+.cart_details > img {
+  width: 150px;
+  height: 150px;
+}
+
+.cart_product_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* right side */
+.right_side_details {
+  border: 2px solid red;
+  height: 100vh;
+  flex-basis: 25%;
+  background: #fff;
+}
