@@ -51,7 +51,7 @@
           <span id="_orders">& Orders</span>
         </div>
 
-        <a href="#" class="cart">
+        <a href="../pages/cart.html" class="cart">
           <img src="../images/cart_icon.png" alt="" />
           <span>Cart</span>
         </a>
@@ -567,6 +567,10 @@
     </footer>
 
     <script>
+      const scrollContainer = document.querySelectorAll(
+        ".best_sellers div img",
+      );
+
       scrollContainer.forEach((item) => {
         item.addEventListener("wheel", (e) => {
           e.preventDefault();
