@@ -4,6 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="banner">
+        <a href="./index.html"
+          ><img src="./images/amazon_logo.png" alt="" class="logo"
+        /></a>
+        <div class="delivery">
+          <img src="./images/location_icon.png" alt="" />
+          <p>Deliver to <br /><span id="uk">United Kingdom</span></p>
+        </div>
+      </div>
+
+      <!-- search -->
+      <div class="search">
+        <div class="search_product">
+          <p>All</p>
+          <img src="./images/dropdown_icon.png" alt="" />
+        </div>
+
+        <input type="search" placeholder="Search Amazon" />
+        <img src="./images/search_icon.png" alt="" />
+      </div>
+
+      <!-- others cta -->
+      <div class="other_cta">
+        <div class="lang_select">
+          <img src="./images/us_flag.png" alt="" />
+          <select>
+            <option value="en">EN</option>
+          </select>
+        </div>
+
+        <div class="account">
+          <a href="#">Hello, sign in</a>
+          <select>
+            <option value="acc">Account & Lists</option>
+          </select>
+        </div>
+
+        <div class="orders">
+          <span id="returns">Returns</span>
+          <span id="_orders">& Orders</span>
+        </div>
+
+        <a href="#" class="cart">
+          <img src="./images/cart_icon.png" alt="" />
+          <span>Cart</span>
+        </a>
+      </div>
+    </header>
+  </body>
 </html>
