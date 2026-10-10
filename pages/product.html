@@ -284,6 +284,8 @@
 
               <select>
                 <option value="qty1">Quantity:1</option>
+                <option value="qty2">Quantity:2</option>
+                <option value="qty3">Quantity:3</option>
               </select>
 
               <a href="#" class="cart_btn">Add to cart</a>
@@ -320,7 +322,7 @@
       <!-- products images-- Deals Under $25 -->
       <section class="product_best_sellers_two">
         <div class="best_sellers_two">
-          <h3>Deals Under $25</h3>
+          <h3>Related Products</h3>
 
           <div>
             <!-- discount product 1 -->
@@ -563,5 +565,14 @@
       <p>Developed by DEMAYORTECH</p>
       <p>&copy; 1996 - 2026, Amazon.com, Inc or its affiliates</p>
     </footer>
+
+    <script>
+      scrollContainer.forEach((item) => {
+        item.addEventListener("wheel", (e) => {
+          e.preventDefault();
+          item.scrollLeft += e.deltaY;
+        });
+      });
+    </script>
   </body>
 </html>
