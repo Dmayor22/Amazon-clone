@@ -30,8 +30,8 @@ hr {
 }
 
 .cart_product_price {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* right side */
@@ -40,4 +40,28 @@ hr {
   height: 100vh;
   flex-basis: 25%;
   background: #fff;
+}
+
+#rate_remark_value {
+  background: #ffa41c;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.rate_remark {
+  color: gray;
+  margin: 10px 0 6px 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.stock {
+  color: gray;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  
 }
