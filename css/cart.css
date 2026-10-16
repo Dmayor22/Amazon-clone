@@ -34,6 +34,10 @@ hr {
   justify-content: space-between;
 }
 
+.cart_product_price > p:first-of-type {
+    line-height: 1.4rem;
+}
+
 /* right side */
 .right_side_details {
   border: 2px solid red;
