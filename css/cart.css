@@ -35,7 +35,7 @@ hr {
 }
 
 .cart_product_price > p:first-of-type {
-    line-height: 1.4rem;
+  line-height: 1.4rem;
 }
 
 /* right side */
@@ -67,5 +67,38 @@ hr {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 7px;
-  
+}
+
+.style {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.style_head {
+  font-weight: 600;
+}
+
+.qty_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.qty_container > select {
+  padding: 6px;
+  font-weight: 600;
+  outline: 0;
+}
+
+.qty_container > a::before {
+  content: "|";
+  padding-right: 10px;
+  color: gray;
+}
+.qty_container > a {
+  color: #009999;
+  vertical-align: middle;
+  font-size: 14px;
 }
