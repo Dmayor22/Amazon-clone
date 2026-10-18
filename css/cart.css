@@ -102,3 +102,10 @@ hr {
   vertical-align: middle;
   font-size: 14px;
 }
+
+.gift {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
