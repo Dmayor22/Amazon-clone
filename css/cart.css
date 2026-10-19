@@ -1,3 +1,7 @@
+main {
+  padding-bottom: 50px;
+}
+
 .shpping_cart {
   padding: 10px 20px;
   display: flex;
@@ -5,7 +9,7 @@
 }
 
 .left_side_details {
-  flex-basis: 75%;
+  flex-basis: 78%;
   background: #fff;
   padding: 30px 20px;
 }
@@ -36,14 +40,6 @@ hr {
 
 .cart_product_price > p:first-of-type {
   line-height: 1.4rem;
-}
-
-/* right side */
-.right_side_details {
-  border: 2px solid red;
-  height: 100vh;
-  flex-basis: 25%;
-  background: #fff;
 }
 
 #rate_remark_value {
@@ -104,8 +100,58 @@ hr {
 }
 
 .gift {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+/* right side */
+.right_side_details {
+  flex-basis: 22%;
+  background: #fff;
+  padding: 20px;
+  height: fit-content;
+}
+
+.right_side_details > .gift_qualify {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: start;
+  color: gray;
+  font-weight: 600;
+}
+
+.gift_qualify > span {
+  margin-left: 5px;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.gift_qualify > input {
+  margin-top: 2px;
+}
+
+.gift_qualify span > a {
+  color: #009999;
+}
+
+.right_side_details p > #checkout_total {
+  font-weight: 600;
+}
+.right_side_details > .gift {
+  margin-top: 8px;
+}
+
+.right_side_details > button {
+  background-color: #ffd64f;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 25px;
+  padding: 10px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
 }
