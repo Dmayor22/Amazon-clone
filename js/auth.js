@@ -24,34 +24,34 @@ const emailInput = document.getElementById("email");
 const errMsg = document.getElementById("errorMessage");
 const createAccount = document.getElementById("createAccount");
 
-// Verify the email when the form is submitted
+// verfication of user after form submit
+
 if (loginForm) {
   loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    //   get user email input
-    const userEmailInput = emailInput.value.trim().toLowerCase();
+    // get user email input
+    const userEmail = emailInput.value.trim().toLowerCase();
 
-    // find if email exist
-
-    const existMailUser = mockUserData.find((user) => {
-      return user.email.toLowerCase() === userEmailInput;
+    // search and find if user details exist in mock data
+    const existingUser = mockUserData.find((user) => {
+      return user.email.toLowerCase() === userEmail;
     });
 
-    if (existMailUser) {
+    // redirect user to homepage if user exist
+
+    if (existingUser) {
       window.location.href = "../index.html";
     } else {
-      // Display an error message
-      errorMessage.textContent =
-        "We cannot find an account with that email address.";
+      errMsg.textContent = "User details not found";
 
-      errorMessage.style.display = "block";
+      errMsg.style.display = "block";
     }
   });
 }
 
-if (createAccount) {
-  createAccount.addEventListener("click", function () {
-    window.location.href = "signup.html";
-  });
-}
+createAccount.addEventListener("click", () => {
+  if (createAccount) {
+    window.location.href = "../pages/signup.html";
+  }
+});
