@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  width: 100%;
+}
+a {
+  color: #009999;
+  text-decoration: none;
+  font-weight: 600;
+  width: 100%;
+}
+
+.container {
+  max-width: fit-content;
+  margin: 30px auto;
+  height: 680px;
+}
+
+.container a > img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.container > form {
+  border: 1px solid #525252;
+  border-radius: 8px;
+  padding: 24px 20px;
+  max-width: 400px;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 4px;
+  outline: 0;
+  margin-top: 4px;
+}
+
+form > button {
+  background-color: #ffd64f;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  margin: 15px 0;
+  padding: 8px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ul {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+#buyforwork {
+  margin: 13px 0;
+  font-weight: 600;
+}
+
+#new {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#new::before {
+  content: "------------";
+  margin-right: 8px;
+}
+#new::after {
+  content: "------------";
+  margin-left: 8px;
+}
+
+#createAccount {
+  width: 100%;
+  border: 1px solid #525252;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  padding: 8px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+}
+
+footer {
+  background: #525252;
+  padding: 20px;
+  text-align: center;
+}
+
+.quicklinks a {
+  margin-right: 10px;
+}
+
+.quicklinks {
+  margin-bottom: 15px;
+}
