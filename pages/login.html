@@ -11,10 +11,11 @@
       <a href="../index.html"
         ><img src="../images/amazon_logo_dark.png" alt=""
       /></a>
-      <form>
+      <form id="loginForm">
         <h2>Sign in</h2>
         <label for="email">Email or phone number</label>
-        <input type="text" id="email" />
+        <input type="email" id="email" name="email" required />
+        <p id="errorMessage" style="color: red; display: none"></p>
         <button class="formSubmit" type="submit">Continue</button>
 
         <p>
@@ -34,7 +35,7 @@
 
       <p id="new">New to Amazon?</p>
 
-      <button type="submit" id="createAccount">
+      <button type="button" id="createAccount">
         Create your Amazon account
       </button>
     </div>
@@ -48,5 +49,7 @@
 
       <p>&copy; 1996-2026, Amazon.com, Inc. or its affilaites</p>
     </footer>
+
+    <script src="../js/auth.js" defer></script>
   </body>
 </html>
