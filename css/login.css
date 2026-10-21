@@ -111,3 +111,24 @@ footer {
 .quicklinks {
   margin-bottom: 15px;
 }
+
+/* sigup */
+.input_wrapper {
+  margin-bottom: 20px;
+}
+
+.input_wrapper > input {
+  padding: 7px;
+}
+
+#loginAccount {
+  width: 100%;
+  border: 1px solid #525252;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  padding: 8px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+}

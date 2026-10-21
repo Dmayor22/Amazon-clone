@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
@@ -11,10 +11,36 @@
       <a href="../index.html"
         ><img src="../images/amazon_logo_dark.png" alt=""
       /></a>
-      <form>
-        <h2>Sign in</h2>
-        <label for="email">Email or phone number</label>
-        <input type="text" id="email" />
+
+      <!-- FORM -->
+      <form id="signUpForm">
+        <h2>Sign Up</h2>
+
+        <div class="input_wrapper">
+          <label for="name">Your name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="first and last name"
+          />
+        </div>
+
+        <div class="input_wrapper">
+          <label for="email">Mobile number or email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="input_wrapper">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="email"
+            name="password"
+            placeholder="At least 6 characters"
+          />
+        </div>
+
         <button class="formSubmit" type="submit">Continue</button>
 
         <p>
@@ -32,11 +58,9 @@
         <a href="#">Shop on Amazon Business</a>
       </form>
 
-      <p id="new">New to Amazon?</p>
+      <p id="new">Have a account</p>
 
-      <button type="button" id="createAccount">
-        Create your Amazon account
-      </button>
+      <button type="button" id="loginAccount">Login with Amazon account</button>
     </div>
 
     <footer>
@@ -49,6 +73,7 @@
       <p>&copy; 1996-2026, Amazon.com, Inc. or its affilaites</p>
     </footer>
 
-    <script src="../js/auth.js" defer></script>
+    <script src="../js/signup.js" defer></script>
+
   </body>
 </html>

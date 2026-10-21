@@ -25,7 +25,6 @@ const errMsg = document.getElementById("errorMessage");
 const createAccount = document.getElementById("createAccount");
 
 // verfication of user after form submit
-
 if (loginForm) {
   loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -33,7 +32,7 @@ if (loginForm) {
     // get user email input
     const userEmail = emailInput.value.trim().toLowerCase();
 
-    // search and find if user details exist in mock data
+    // search a\nd find if user details exist in mock data
     const existingUser = mockUserData.find((user) => {
       return user.email.toLowerCase() === userEmail;
     });
